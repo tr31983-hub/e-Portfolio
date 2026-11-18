@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My E-Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f8ff;
+    color: #26364a;
+}
+
+header {
+    background: #ffffff;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 15px #00000010;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: 700;
+    color: #2674d9;
+}
+
+nav a {
+    text-decoration: none;
+    color: #34495e;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #2674d9;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 60px 10%;
+    flex-wrap: wrap;
+    gap: 40px;
+    background: linear-gradient(135deg,#e7f2ff,#ffffff);
+}
+
+.hero-text {
+    max-width: 520px;
+}
+
+.hero-text h3 {
+    color: #2674d9;
+    font-size: 20px;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    margin: 15px 0;
+    color: #183b68;
+}
+
+.hero-text p {
+    line-height: 2;
+    color: #66788a;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 28px;
+    background: #2674d9;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #1555a5;
+    transform: translateY(-3px);
+}
+
+.profile-img {
+    width: 280px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 25px;
+    border: 8px solid white;
+    box-shadow: 0 10px 35px #2674d930;
+}
+
+section {
+    padding: 75px 10%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 30px;
+    color: #183b68;
+    margin-bottom: 40px;
+}
+
+.about {
+    text-align: center;
+    max-width: 750px;
+    margin: auto;
+    line-height: 2;
+    color: #64748b;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px #00000008;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px #2674d920;
+}
+
+.card h3 {
+    color: #2674d9;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #64748b;
+    line-height: 1.8;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 15px;
+    background: #e1eaf5;
+}
+
+.gallery .card {
+    padding: 12px;
+}
+
+.contact {
+    text-align: center;
+    background: #e7f2ff;
+    border-radius: 25px;
+    padding: 45px 20px;
+}
+
+.contact p {
+    margin: 12px 0;
+    color: #52677e;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #183b68;
+    color: white;
+    font-size: 14px;
+}
+
+@media(max-width:768px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0 6px;
+        font-size: 12px;
+    }
+
+    .hero {
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .profile-img {
+        width: 230px;
+        height: 290px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">My Portfolio.</div>
+    <nav>
+        <a href="#home">หน้าหลัก</a>
+        <a href="#about">เกี่ยวกับฉัน</a>
+        <a href="#education">การศึกษา</a>
+        <a href="#activities">กิจกรรม</a>
+        <a href="#contact">ติดต่อ</a>
+    </nav>
+</header>
+
+<!-- หน้าหลัก -->
+<div class="hero" id="home">
+    <div class="hero-text">
+        <h3>WELCOME TO MY PORTFOLIO</h3>
+        <h1>Portfolio<br>ฉันชื่อ [นางสาว สุชานาถ นิยมจันทร์]</h1>
+        <p>
+            ยินดีต้อนรับเข้าสู่เว็บไซต์แฟ้มสะสมผลงานของฉัน
+            เว็บไซต์นี้รวบรวมประวัติส่วนตัว ประวัติการศึกษา
+            กิจกรรม และผลงานต่าง ๆ
+        </p>
+        <a href="#about" class="btn">รู้จักฉันเพิ่มเติม</a>
+    </div>
+
+    <img class="profile-img"
+         src="https://placehold.co/400x500/e1efff/2674d9?text=Your+Photo"
+         alt="รูปโปรไฟล์">
+</div>
+
+<!-- เกี่ยวกับฉัน -->
+<section id="about">
+    <h2 class="section-title">ABOUT ME</h2>
+    <div class="about">
+        <p>
+            สวัสดี ฉันชื่อ [นางสาว สุชานาถ นิยมจันทร์]
+            ปัจจุบันกำลังศึกษาอยู่ระดับชั้น [มัธยมศึกษาปีที่6]
+            โรงเรียน [ธัญรัตน์]
+            เป็นคนที่มีความตั้งใจในการเรียนรู้
+            ชอบพัฒนาตนเอง และพร้อมเปิดรับประสบการณ์ใหม่ ๆ
+        </p>
+    </div>
+</section>
+
+<!-- ข้อมูลส่วนตัว -->
+<section>
+    <h2 class="section-title">PERSONAL INFORMATION</h2>
+    <div class="info-grid">
+        <div class="card">
+            <h3>ชื่อ-นามสกุล</h3>
+            <p>[นางสาว สุชานาถ นิยมจันทร์]</p>
+        </div>
+        <div class="card">
+            <h3>ชื่อเล่น</h3>
+            <p>[ปอป่าน]</p>
+        </div>
+        <div class="card">
+            <h3>วันเกิด</h3>
+            <p>[14/03/2552]</p>
+        </div>
+        <div class="card">
+            <h3>ความสามารถพิเศษ</h3>
+            <p>[เป็นคนที่โหดมาก]</p>
+        </div>
+    </div>
+</section>
+
+<!-- การศึกษา -->
+<section id="education">
+    <h2 class="section-title">EDUCATION</h2>
+    <div class="info-grid">
+        <div class="card">
+            <h3>ระดับประถมศึกษา</h3>
+            <p>โรงเรียน [ธัญสิทธิศิลป์]</p>
+            <p>ปีการศึกษา [ปี -]</p>
+        </div>
+        <div class="card">
+            <h3>ระดับมัธยมศึกษาตอนต้น</h3>
+            <p>โรงเรียน [ธัญรัตน์]</p>
+            <p>ปีการศึกษา [ปี -]</p>
+        </div>
+        <div class="card">
+            <h3>ระดับมัธยมศึกษาตอนปลาย</h3>
+            <p>โรงเรียน [ธัญรัตน์]</p>
+            <p>ปีการศึกษา [ปี -]</p>
+        </div>
+    </div>
+</section>
+
+<!-- กิจกรรม -->
+<section id="activities">
+    <h2 class="section-title">ACTIVITIES & ACHIEVEMENTS</h2>
+    <div class="gallery">
+        <div class="card">
+            <img src="https://placehold.co/400x250/e1efff/2674d9?text=Activity+1" alt="กิจกรรม 1">
+            <h3>กิจกรรมที่ 1</h3>
+            <p>รายละเอียดกิจกรรมและประสบการณ์ที่ได้รับ</p>
+        </div>
+
+        <div class="card">
+            <img src="https://placehold.co/400x250/e1efff/2674d9?text=Activity+2" alt="กิจกรรม 2">
+            <h3>กิจกรรมที่ 2</h3>
+            <p>รายละเอียดกิจกรรมและประสบการณ์ที่ได้รับ</p>
+        </div>
+
+        <div class="card">
+            <img src="https://placehold.co/400x250/e1efff/2674d9?text=Activity+3" alt="กิจกรรม 3">
+            <h3>กิจกรรมที่ 3</h3>
+            <p>รายละเอียดกิจกรรมและประสบการณ์ที่ได้รับ</p>
+        </div>
+    </div>
+</section>
+
+<!-- ติดต่อ -->
+<section id="contact">
+    <div class="contact">
+        <h2 class="section-title">CONTACT ME</h2>
+        <p>อีเมล: yourname@email.com</p>
+        <p>โทรศัพท์: 08X-XXX-XXXX</p>
+        <p>Facebook: [ชื่อ Facebook]</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 My E-Portfolio | Designed by Me</p>
+</footer>
+
+</body>
+</html>
